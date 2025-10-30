@@ -3,10 +3,12 @@ name: Test and Build
 on:
   push:
     branches: [ "main" ]
-
+  pull_request:
+     branches: [ "main" ]
 
 permissions:
   contents: read
+  packages: write
 
 jobs:
   test_and_build:
